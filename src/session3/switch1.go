@@ -3,7 +3,14 @@ package main
 import "fmt"
 
 func main() {
-  //Swit
+  //제어문(조건문) - switch
+  //switch 뒤 표현식(Expression) 사용 가능
+  //case 뒤 표현식(Expression) 사용 가능
+  //자동 break 때문에 fallthough 존재
+  //Type 분기 --> 값이 아닌 변수 Type으로 분기가//
+
+  //session3 switch1 if문에서 쓰던 조건들을 switch에서 사용가능
+
   //예제 1
   a := 7
   switch {

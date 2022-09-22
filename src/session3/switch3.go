@@ -13,4 +13,26 @@ func main() {
     fmt.Println("a -->", a, "는 홀수")
   }
 
+  //예제2
+  // go는 break가 없어도 자동으로 바로 빠져나간다.
+  // 그러므로 반대로 fallthrough를 사용하면 통과시킨다.
+  // case문의 맨 마지막에는 사용 불가
+  switch e := "go"; e {
+  case "java":
+    fmt.Println("Java!")
+    fallthrough
+  case "go":
+    fmt.Println("go!")
+    fallthrough
+  case "python":
+    fmt.Println("python!")
+    fallthrough
+  case "ruby":
+    fmt.Println("ruby!")
+  case "c":
+    fmt.Println("c")
+
+  }
+
+
 }
