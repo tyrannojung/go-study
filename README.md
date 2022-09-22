@@ -1,6 +1,32 @@
 ## 💡 Introduction
 - GO STUDY
 
+## DAY3
+
+- GO 특징
+  - 모호하거나, 애매한 문법 금지(go철학)
+  - 후치 연산자 허용 i++ but 전치 연산자 비허용 ++i x 문법애러
+  - 증감연산 반환값 x sum := i++ 사용불가
+  - 포인터(Pointer 허용, 연산 비허용)
+  - 문장 끝 세미콜론(;) 주의 (자동으로 끝에 세미콜론 삽입)
+  
+- GO 코드서식지정
+  - 터미널명령어 : gofmt -w ~~.go --> 코드가 뒤죽박죽이라도 자동 변환 
+
+- 조건문(If)
+  - 반드시 Boolean 검사 -> 1, 0 (사용불가 : 자동 형 변환 불가)
+  - 조건 소괄호 사용안됨 && 조건 한문장일때 괄호생략 안됨
+  
+- 조건문(Switch) 
+  - switch 뒤 표현식(Expression) 사용 가능 & case 뒤 표현식(Expression) 사용 가능
+  - break가 default이므로, fallthough 존재
+  - case 여러가지 나열가능
+  
+- 반복문(For)
+  - Go에서 제공되는 '유일한' 반복문
+  - session3 for 여러 사례들을 한번씩 보자
+  
+
 ## DAY2
 
 - GO 장점
