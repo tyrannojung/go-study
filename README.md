@@ -33,7 +33,16 @@
   - 추출
     -  var str1 string = "Golang"
     -  ex) `str1[0:2]` : Go, `str1[0]` : 71, `str1[3:]` : ang, `str1[:4]` : Gola, `str1[1:3]` : ol
-
+  - 비교
+    - ==, !=
+    - 주의)  >, < 사용가능 but `Golang, World` 두개를 비교했을때, 바이트의 비교가 아닌, 아스키코드를 비교. World가 더 큼
+  - 조합(결합)
+    -`str1 := "GO can make"; str2 := " programming very productive"` 
+    - 일반연산 :
+      - ex) `str1+str2` : GO can make programming very productive
+    - 결합(join) :
+      - ex) strSet := []string{}; strSet = append(strSet, str1); strSet = append(strSet, str2); strings.Join(strSet, "") : GO can make programming very productive
+    - 문자열은 한번 선언하면 메모리에서 수정이 불가하다. 새로 계속 생성해서 비효율적. --> go에서는 join 자바에서는 stringbuffer가 효율적으로 개선된 함수다.
 ## DAY4
 
 - 패키지
