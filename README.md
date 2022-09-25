@@ -22,7 +22,8 @@
   - Golang은 char타입이 존재하지 않는다. --> rune문자 코드 값으로 표현
     - ex) var str1 string = "c:\\go_study\\src\\" // --> c:\go_study\src\
     - ex) str2 := &#96;c:\go_study\src\ &#96; // excape사용하지 않더라도 그대로 사용()
-  - 문자열 길이구하기(len, RuneCountInString, rune) : ex) `var str4 string = "안녕하세요."`
+  - 문자열 길이구하기(len, RuneCountInString, rune) 
+    - `var str4 string = "안녕하세요."`
     - ex) len : `len(str4)` = 16출력 // byte
     - ex) RuneCountInString : `utf8.RuneCountInString(str4)` = 6출력
     - ex) rune : `len([]rune(str4))` = 6출력
