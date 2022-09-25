@@ -17,7 +17,7 @@
     - 형변환 없을경우 예외(에러) 발생
     - 형변환시, 자료형이 넘치는 경우 해당자료형의 max값 출력 
     - 연산시 overflow(연산 후, 자료형에 넘치는경우 실행 x)
-- 문자형 기초
+- 문자열 기초
   - 큰따옴표(""), Backtick백틱(``), 작은따옴표('')
   - Golang은 char타입이 존재하지 않는다. --> rune문자 코드 값으로 표현
     - ex) var str1 string = "c:\\go_study\\src\\" // --> c:\go_study\src\
@@ -27,8 +27,12 @@
     - ex) len : `len(str4)` = 16출력 // byte
     - ex) RuneCountInString : `utf8.RuneCountInString(str4)` = 6출력
     - ex) rune : `len([]rune(str4))` = 6출력
-  - 
-
+  - 문자열은 배열로 취급 --> 반복문에서 순회 및 인덱스로 접근 가능.
+    - 인덱스 접근시 문자의 아스키코드 출력, printf 사용시 실제 문자 출력
+- 문자열 연산
+  - 추출
+    -  var str1 string = "Golang"
+    -  ex) `str1[0:2]` : Go, `str1[0]` : 71, `str1[3:]` : ang, `str1[:4]` : Gola, `str1[1:3]` : ol
 
 ## DAY4
 
