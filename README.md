@@ -6,17 +6,20 @@
 - Boolean
   - 조건부 논리 연산자랑 주로 사용 : !(not), ||(or), &&(and)
     - 암묵적 형변환이 안된다.(0 Nil --> false, 1 -->ture 로 변환 없음)
+    
 - 숫자형 기초
   - 정수, 실수, 복소수
     - 32bit, 64bit, unsigned(양수)
     - 8진수(0), 10진수, 16진수(0x)
     - 내가 데이터 타입을 정확히 알고 있으면 32,64를 써도 되는데, 보편적으로 int만쓰는게 속편함(내부적으로 최적화 진행함)
+    
 - 숫자형 연산
   - 산술 비교 : 타입이 같아야 가능
     - 다른타입끼리는 반드시 형 변환 후 연산
     - 형변환 없을경우 예외(에러) 발생
     - 형변환시, 자료형이 넘치는 경우 해당자료형의 max값 출력 
     - 연산시 overflow(연산 후, 자료형에 넘치는경우 실행 x)
+    
 - 문자열 기초
   - 큰따옴표(""), Backtick백틱(``), 작은따옴표('')
   - Golang은 char타입이 존재하지 않는다. --> rune문자 코드 값으로 표현
@@ -29,6 +32,7 @@
     - ex) rune : `len([]rune(str4))` = 6출력
   - 문자열은 배열로 취급 --> 반복문에서 순회 및 인덱스로 접근 가능.
     - 인덱스 접근시 문자의 아스키코드 출력, printf 사용시 실제 문자 출력
+    
 - 문자열 연산
   - 추출
     -  var str1 string = "Golang"
@@ -43,6 +47,7 @@
     - 결합(join) :
       - ex) strSet := []string{}; strSet = append(strSet, str1); strSet = append(strSet, str2); strings.Join(strSet, "") : GO can make programming very productive
     - 문자열은 한번 선언하면 메모리에서 수정이 불가하다. 새로 계속 생성해서 비효율적. --> go에서는 join 자바에서는 stringbuffer가 효율적으로 개선된 함수다.
+    
 ## DAY4
 
 - 패키지
