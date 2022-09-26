@@ -1,6 +1,14 @@
 ## 💡 Introduction
 - GO STUDY
 
+## DAY6
+
+- 배열
+  - 
+    
+- 슬라이스
+  - 
+
 ## DAY5
 
 - Boolean
