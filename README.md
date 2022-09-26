@@ -18,9 +18,9 @@
       - ex) `slice := []int{}` // 배열은 크기를 선언했지만,  slice는 선언하지 않는다. 
     - make함수(자료형, 길이, 용량[생략시, 길이])
       - ex) `slice []int = make([]int, 5, 10)` // int타입, 길이5, 용량10
+![image](https://user-images.githubusercontent.com/58019931/192328542-fc47703f-1af4-48b7-b408-0a712af97ba5.png)   
       - ex) `slice := make([]int, 5)` // int타입, 길이5, 용량5
       - 만약 용량을 처음 설정보다 초과하면 재할당이 일어나 성능의 저하가 일어나며, 너무 적게쓰면 메모리의 낭비가 이루어짐. 길이와 용량을 `엔지니어 입장에서 성능을 고려해서 디테일`하게 사용할 수 있게 제공해준다.
-      - ![image](https://user-images.githubusercontent.com/58019931/192328542-fc47703f-1af4-48b7-b408-0a712af97ba5.png)   
 
 
 
