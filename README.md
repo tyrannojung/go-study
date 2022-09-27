@@ -1,6 +1,12 @@
 ## 💡 Introduction
 - GO STUDY
 
+## DAY7
+
+- 함수(Function)
+  - 선언 위치는 어느 곳이든 가
+
+
 ## DAY6
 
 - 배열(Array)
