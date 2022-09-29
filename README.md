@@ -1,6 +1,13 @@
 ## 💡 Introduction
 - GO STUDY
 
+## DAY7
+
+- 함수(Function)
+  - func 키워드 선언 & 선언 위치는 어느 곳이든 가능
+  - 타 언어와 달리 반환값(return value) 다수 가능
+
+
 ## DAY6
 
 - 배열(Array)
