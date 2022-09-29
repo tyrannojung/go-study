@@ -6,7 +6,13 @@
 - 함수(Function)
   - func 키워드 선언 & 선언 위치는 어느 곳이든 가능
   - 타 언어와 달리 반환값(return value) 다수 가능
-
+  - 동적할당(매개변수, 인수)
+    - ex) 매개변수 : `func multiply(n ...int) int`
+    - ex) 인수(slice) : `a := []int{1, 2, 3, 4, 5}; m := multiply(a...);`
+- defer
+  - 함수가 종료되기 직전에 호출
+  - (주의!) `defer end(start("b"))` defer 바로 붙어있는 함수만 적용됨. start는 defer적용x
+    - 되도록 defer문은 함수 하나로 사용한다.
 
 ## DAY6
 
